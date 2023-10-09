@@ -52,6 +52,12 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4de-sD-43W">
+                        <rect key="frame" x="177" y="633" width="75" height="35"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="cAM-52-upz" firstAttribute="top" secondItem="jnI-8n-L6z" secondAttribute="bottom" constant="10" id="Pxl-dn-FsG"/>
@@ -71,7 +77,15 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="9.1603053435114496" y="126.40845070422536"/>
+            <connections>
+                <outlet property="captionLabel" destination="nGM-2z-e9k" id="7RW-Od-WnA"/>
+                <outlet property="commentButton" destination="4de-sD-43W" id="mvb-nc-7US"/>
+                <outlet property="dateLabel" destination="cAM-52-upz" id="tEc-cn-sDI"/>
+                <outlet property="likeButton" destination="jnI-8n-L6z" id="Myv-1g-zxg"/>
+                <outlet property="likeLabel" destination="5jJ-aB-ElV" id="FtN-Wq-IGq"/>
+                <outlet property="postImageView" destination="iw8-9w-UBT" id="etb-TS-XC9"/>
+            </connections>
+            <point key="canvasLocation" x="269" y="38"/>
         </tableViewCell>
     </objects>
     <resources>
